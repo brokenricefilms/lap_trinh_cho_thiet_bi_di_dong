@@ -1,0 +1,3 @@
+- android api version 26
+- test device have google play
+- package name: vn.edu.stu.???
