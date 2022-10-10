@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Demo Đa ngôn ngữ</string>
+    <string name="str_hello_stu">Xin chào STU!</string>
+    <string name="str_click">Nhấn</string>
+    <string name="str_take_break">Giải lao đi!</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvNhapX"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Nhập x"
+        android:textColor="#000000"
+        android:textSize="13pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNhapX"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:hint="x"
+        android:textColor="#000000"
+        android:textSize="13pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNhapX" />
+
+    <Button
+        android:id="@+id/btnGui"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="Gửi"
+        android:textColor="#000000"
+        android:textSize="13pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etNhapX" />
+</androidx.constraintlayout.widget.ConstraintLayout>

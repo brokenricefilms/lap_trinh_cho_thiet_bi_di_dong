@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTieuDe"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:background="#FFFF00"
+        android:gravity="center"
+        android:text="ĐỔI TIỀN"
+        android:textColor="#FF0000"
+        android:textSize="17pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSoTien"
+        android:layout_width="wrap_content"
+        android:layout_height="0pt"
+        android:gravity="center"
+        android:text="Số tiền: "
+        android:textSize="14pt"
+        app:layout_constraintBottom_toBottomOf="@id/etSoTien"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTieuDe" />
+
+    <EditText
+        android:id="@+id/etSoTien"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số tiền"
+        android:textSize="14pt"
+        app:layout_constraintLeft_toRightOf="@id/tvSoTien"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTieuDe" />
+
+    <RadioGroup
+        android:id="@+id/groupDoiTien"
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etSoTien">
+
+        <RadioButton
+            android:id="@+id/radUSD2VND"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="USD => VND"
+            android:textSize="13pt" />
+
+        <RadioButton
+            android:id="@+id/radVND2USD"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="VND => USD"
+            android:textSize="13pt" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnDoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐỔI"
+        android:textSize="14pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/groupDoiTien" />
+
+    <TextView
+        android:id="@+id/tvThanhTien"
+        android:layout_width="0pt"
+        android:layout_height="0pt"
+        android:background="#00FF00"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textSize="14pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnDoi" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

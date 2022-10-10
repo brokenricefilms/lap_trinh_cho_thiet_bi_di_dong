@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:text="THÔNG TIN SINH VIÊN"
+        android:textAlignment="center"
+        android:id="@+id/tvTieuDe"
+        android:textSize="13pt"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMa"
+        android:text="Mã:"
+        android:textAlignment="center"
+        android:textSize="12pt"
+        app:layout_constraintTop_toBottomOf="@id/tvTieuDe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <EditText
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMa"
+        android:textAlignment="center"
+        android:textSize="12pt"
+        android:inputType="number"
+        android:hint="Nhập mã"
+        app:layout_constraintTop_toBottomOf="@id/tvMa"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <TextView
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTen"
+        android:text="Tên:"
+        android:textAlignment="center"
+        android:textSize="12pt"
+        app:layout_constraintTop_toBottomOf="@id/etMa"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <EditText
+        android:layout_width="0pt"
+        android:layout_height="wrap_content"
+        android:id="@+id/etTen"
+        android:textAlignment="center"
+        android:textSize="12pt"
+        android:inputType="text"
+        android:hint="Nhập tên"
+        app:layout_constraintTop_toBottomOf="@id/tvTen"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGui"
+        android:text="GỬI"
+        android:textSize="12pt"
+        app:layout_constraintTop_toBottomOf="@id/etTen"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
